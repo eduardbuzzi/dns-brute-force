@@ -25,7 +25,6 @@ for palavra in $(cat $WORDLIST);
 do
 host $palavra.$DOMAIN | grep "address"
 done
-echo
 principal
 }
 principal
