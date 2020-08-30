@@ -6,6 +6,11 @@ if [ -z "$DOMAIN" ]
 then
 domain
 fi
+VERIFICATION=$(host $DOMAIN | grep "found")
+if [ ! -z "$VERIFICATION" ]
+then
+domain
+fi
 }
 
 wordlist(){
